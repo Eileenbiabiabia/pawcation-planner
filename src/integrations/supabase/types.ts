@@ -14,7 +14,66 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      pet_profiles: {
+        Row: {
+          age_estimate: string | null
+          breed: string | null
+          created_at: string
+          daily_exercise_need: string | null
+          environment_preference: string | null
+          flight_comfort: string | null
+          gemini_raw_response: Json | null
+          id: string
+          image_url: string | null
+          name: string
+          personality_archetype: string | null
+          rabies_vaccinated: string | null
+          separation_anxiety: string | null
+          updated_at: string
+          user_id: string | null
+          weight_estimate: string | null
+          weight_unit: string | null
+        }
+        Insert: {
+          age_estimate?: string | null
+          breed?: string | null
+          created_at?: string
+          daily_exercise_need?: string | null
+          environment_preference?: string | null
+          flight_comfort?: string | null
+          gemini_raw_response?: Json | null
+          id?: string
+          image_url?: string | null
+          name: string
+          personality_archetype?: string | null
+          rabies_vaccinated?: string | null
+          separation_anxiety?: string | null
+          updated_at?: string
+          user_id?: string | null
+          weight_estimate?: string | null
+          weight_unit?: string | null
+        }
+        Update: {
+          age_estimate?: string | null
+          breed?: string | null
+          created_at?: string
+          daily_exercise_need?: string | null
+          environment_preference?: string | null
+          flight_comfort?: string | null
+          gemini_raw_response?: Json | null
+          id?: string
+          image_url?: string | null
+          name?: string
+          personality_archetype?: string | null
+          rabies_vaccinated?: string | null
+          separation_anxiety?: string | null
+          updated_at?: string
+          user_id?: string | null
+          weight_estimate?: string | null
+          weight_unit?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
