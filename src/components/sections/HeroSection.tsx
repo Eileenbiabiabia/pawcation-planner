@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { PawPrint, Play } from "lucide-react";
 import { DecorativePaw } from "@/components/icons/PawIcons";
@@ -46,9 +47,11 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in-up stagger-3">
-              <Button variant="hero" size="xl">
-                <PawPrint className="h-5 w-5" />
-                Create My Paw Profile
+              <Button variant="hero" size="xl" asChild>
+                <Link to="/signup">
+                  <PawPrint className="h-5 w-5" />
+                  Create My Paw Profile
+                </Link>
               </Button>
               <Button variant="hero-secondary" size="xl">
                 <Play className="h-5 w-5" />
